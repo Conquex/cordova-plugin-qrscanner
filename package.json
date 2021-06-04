@@ -9,7 +9,7 @@
     ]
   },
   "scripts": {
-    "postinstall": "npm run build",
+    "postinstall": "npm install && npm run build",
     "build": "gulp && npm run clean-build",
     "clean-build": "trash dist/plugin.min.js && trash dist/www.min.js && trash src/browser/worker.min.js",
     "test": "npm run jshint",
